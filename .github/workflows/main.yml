@@ -3,7 +3,7 @@ name: Run delstack
 on:
   push:
     branches:
-      - ci/test
+      - main
 
 jobs:
   run-delstack:
