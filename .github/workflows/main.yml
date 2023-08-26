@@ -1,0 +1,16 @@
+name: Run delstack
+
+on:
+  push:
+    branches:
+      - ci/test
+
+jobs:
+  run-delstack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - uses: go-to-k/delstack@v1
+      - name: Run delstack
+        run: delstack -v
