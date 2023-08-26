@@ -19,4 +19,4 @@ jobs:
           aws-region: ap-northeast-1
       - uses: go-to-k/delstack@v1
       - name: Run delstack
-        run: delstack -s test-stack
+        run: delstack -s CDKToolkit
