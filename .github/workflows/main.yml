@@ -22,5 +22,5 @@ jobs:
         run: delstack -v
       - uses: go-to-k/delstack@main
         with:
-          stack-name: test
+          stack-name: test1, test2
           region: ap-northeast
